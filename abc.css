@@ -1,0 +1,102 @@
+.home-section{
+    display: flex;
+    
+    width: 98.79vw;
+    height: 55vw !important;
+    left: -8px;
+    height: auto;
+    position: relative;
+
+}
+.home-section img{
+    margin-top: 84px;
+    width: 98.79vw;
+    height: 46vw;
+    position: absolute;
+    z-index: -5;
+    left: -8px;
+    /* right: -10px; */
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.over-play{
+    position: absolute;
+    z-index: -4;
+    background-color: black;
+    width: 98.79vw;
+    height: 46vw;
+    margin-top: 84px;
+    opacity: 0.39;
+    left: -8px;
+}
+.home-section .container{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section .container .row{
+   
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.row .bigtext{
+    width: 30%;
+    height: auto;
+    padding-top: 40px !important;
+    flex: 0 0 50%;
+    color: white;
+    max-width: 50%;
+
+}
+.bigtext h1{
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 1px 1px #373737;
+}
+
+.icon-play i{
+    color: #e52f37;
+    font-size: 26px;
+    line-height: 56px;
+    margin-left: 18px;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    /* chua biet lam sao de nam giua */
+    background-color: white;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    top: 0px;
+}
+.popup{
+    position: relative;
+    margin-top: 25px;
+}
+.video-icon{
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+.effect{
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 50% 50%;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+.icon-play i{
+    line-height: 52px;
+}

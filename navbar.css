@@ -1,0 +1,126 @@
+         /* html{
+            margin: 0px;
+            padding: 0px;
+        } */
+        .div{
+            display: block;
+        }
+        body{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+         /* position: relative;  */
+        }
+        /* font=size */
+
+
+        .navbar{
+            width: 100vw;
+            height:92px;
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 28px 10px;
+            box-sizing: border-box;
+            z-index: 100;
+
+        }
+        .navbar .container{
+            width: 1140px;
+            height: 52px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .navbar-brands{
+            color:#E52F37;
+            font-size: 30px;
+            font-weight: 500;
+            flex: 1;
+        }
+        .navbar-collapsed{
+            flex: 8;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .navbar-collapsed .child{
+            color: #071e55;
+            font-size: 17px !important;
+            line-height: 30px !important;
+            padding: 10px 15px !important;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+        }
+        .navbar-collapsed .child1{
+            border: 1px solid #e52f37;
+            color: #fff ;
+            background: #e52f37;
+            border-radius: 23px 23px;
+            padding: 12px 22px;
+            margin-left: 10px;
+            margin-right: 15px;
+            font-family: 'Nunito', sans-serif;
+            transition: all 0.5s ease;
+        }
+        .child:hover{
+            color: #e52f37;
+            transition-duration: 0.5s;
+        }
+        .child1:hover{
+            color: #e52f37;
+            background-color: #fff;
+        }
+        .setting{
+            display: none;
+
+        }
+        @media screen and (min-width:1200px) {
+            
+        }
+
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .navbar .container{
+                
+                max-width: 760px;
+            }
+            .child, .child1{
+                display: none;
+            }
+            .setting{
+                margin-right: 20%;
+                display: block;
+                color: #E52F37;
+                border: solid 1px  #E52F37 !important;
+                padding: 0.25rem 0.75rem ;
+                font-size: 1.25rem;
+                line-height: 0.75;
+                border-radius: 0.25rem;
+            }
+        }
+        @media screen and (min-width:550px) and (max-width: 767px) {
+            .navbar .container{
+                max-width: 540px;
+            }
+            .child, .child1{
+                display: none;
+            }
+            .setting{
+                margin-right: 20px;
+                display: block;
+                color: #E52F37;
+                border: 1px solid #E52F37;
+                padding: 0.25rem 0.75rem ;
+                font-size: 1rem;
+                line-height: 0.75;
+                border-radius: 0.25rem;
+                
+            }
+        }
+
+
+        
