@@ -14,7 +14,7 @@
 
         .navbar{
             width: 100vw;
-            height:92px;
+            height:90px;
             background-color: rgb(255, 255, 255);
             position: fixed;
             top: 0;
@@ -38,14 +38,20 @@
         }
         .navbar-brands{
             color:#E52F37;
-            font-size: 30px;
+            font-size: 29px;
             font-weight: 500;
-            flex: 1;
+            flex: 2;
+            max-width: 300px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
         }
         .navbar-collapsed{
-            flex: 8;
+            /* flex: 9; */
             display: flex;
             justify-content: flex-end;
+            position: relative;
+            right: 20px;
+            
         }
         .navbar-collapsed .child{
             color: #071e55;
