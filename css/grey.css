@@ -1,0 +1,119 @@
+.section-grey {
+  background: #f1faff;
+  padding: 90px 0 100px 0;
+}
+.col-md-12 {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.section-title {
+  margin-bottom: 10px;
+  font-size: 38px;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+  margin-top: 0;
+  color: #071e55;
+  font-weight: 700;
+}
+p.section-subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #7c8595;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.services-wrapper {
+  position: relative;
+}
+.main-services {
+  position: relative;
+  margin: 10px 5px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 1s;
+}
+.main-services.blue i {
+  background-color: #1e90ff;
+}
+.main-services i {
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 16px 16px;
+  font-size: 40px;
+  line-height: 46px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #e52f37;
+}
+.main-services:hover {
+  transform: scale(1.025);
+  transition: all 1s;
+}
+.main-services {
+  position: relative;
+  margin: 10px 5px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 1s;
+}
+.main-services.blue i {
+  background-color: #1e90ff;
+  border-radius: 20px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 40px;
+  grid-area: auto;
+  line-height: 46px;
+  margin: 0px 0px 15px;
+  padding: 16px;
+  text-align: center;
+}
+.main-services i {
+  margin-bottom: 15px;
+  display: inline-block;
+  padding: 16px 16px;
+  font-size: 40px;
+  line-height: 46px;
+  width: 75px !important;
+  height: 75px !important;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #e52f37;
+  box-sizing: border-box;
+}
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.main-services h4 {
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+  margin-top: 0;
+  color: #071e55;
+}
+.main-services p {
+  padding: 0 10px;
+  margin-bottom: 15px;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #7c8595;
+  font-family: "Open Sans", sans-serif;
+}
+.main-services.green i {
+  background-color: #27b36a;
+}
