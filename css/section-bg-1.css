@@ -1,0 +1,89 @@
+.section-bg-1 {
+  background: url(../img/bg3.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  padding: 110px 0;
+}
+.section-bg-overlay {
+  width: 100%;
+  background: #e52f37;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+@media screen and (min-width: 768px) {
+  .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+.white-text {
+  color: #fff;
+}
+h2 {
+  font-size: 38px;
+}
+@media screen and (min-width: 768px) {
+  .offset-md-2 {
+    margin-left: 16.666667%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}
+.fun-facts-box i {
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+}
+.fa-gem:before {
+  content: "\f3a5";
+}
+.fun-facts-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.fun-facts-title span {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+}
+.fa-heart:before {
+  content: "\f004";
+}
+.fa-award:before {
+  content: "\f559";
+}
+.fa-anchor:before {
+  content: "\f13d";
+}
+.text-center {
+  text-align: center !important;
+}
