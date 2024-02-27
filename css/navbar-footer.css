@@ -5,12 +5,14 @@
 .div {
   display: block;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   /* position: relative;  */
 }
+
 /* font=size */
 
 .navbar {
@@ -28,6 +30,7 @@ body {
   z-index: 100;
   border-bottom: 1px solid #efefef;
 }
+
 .navbar .container {
   width: 1140px;
   height: 52px;
@@ -36,6 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar-brands {
   color: #e52f37;
   font-size: 29px;
@@ -45,6 +49,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
+
 .navbar-collapsed {
   /* flex: 9; */
   display: flex;
@@ -52,6 +57,7 @@ body {
   position: relative;
   right: 20px;
 }
+
 .navbar-collapsed .child {
   color: #071e55;
   font-size: 17px !important;
@@ -60,6 +66,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
 }
+
 .navbar-collapsed .child1 {
   border: 1px solid #e52f37;
   color: #fff;
@@ -71,28 +78,34 @@ body {
   font-family: "Nunito", sans-serif;
   transition: all 0.5s ease;
 }
+
 .child:hover {
   color: #e52f37;
   transition-duration: 0.5s;
 }
+
 .child1:hover {
   color: #e52f37;
   background-color: #fff;
 }
+
 .setting {
   display: none;
 }
-@media screen and (min-width: 1200px) {
-}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar .container {
+    position: fixed;
     max-width: 760px;
   }
+
   .child,
   .child1 {
     display: none;
   }
+
   .setting {
     margin-right: 20%;
     display: block;
@@ -104,14 +117,17 @@ body {
     border-radius: 0.25rem;
   }
 }
-@media screen and (min-width: 550px) and (max-width: 767px) {
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .navbar .container {
-    max-width: 540px;
+    max-width: 375px;
   }
+
   .child,
   .child1 {
     display: none;
   }
+
   .setting {
     margin-right: 20px;
     display: block;
@@ -121,5 +137,148 @@ body {
     font-size: 1rem;
     line-height: 0.75;
     border-radius: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 549px) {
+  .navbar .container {
+    max-width: 400px;
+  }
+
+  .child,
+  .child1 {
+    display: none;
+  }
+
+  .setting {
+    margin-right: 20px;
+    display: block;
+    color: #e52f37;
+    border: 1px solid #e52f37;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    line-height: 0.75;
+    border-radius: 0.25rem;
+  }
+}
+
+/* navbar */
+/* navbar */
+/* navbar */
+/* navbar */
+/* navbar */
+
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding: 40px 0 20px 0;
+  background-color: #fafbfc;
+}
+
+.footer p {
+  margin-bottom: 5px;
+  line-height: 24px;
+  color: #454545;
+}
+
+span.template-name {
+  font-weight: bold;
+}
+
+.footer p>a {
+  font-size: 17px;
+  color: #e52f37;
+  text-decoration: underline;
+}
+
+ul.footer_social {
+  float: right;
+}
+
+ul.footer_social li {
+  display: inline-block;
+  margin: 0;
+  line-height: 100% !important;
+}
+
+ul.footer_social li a i.fa-twitter {
+  color: #4099ff;
+}
+
+ul.footer_social li a i {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 0;
+  font-size: 26px !important;
+  line-height: 26px !important;
+  color: #1e90ff;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+ul.footer_social li a i:hover {
+  color: #e52f37 !important;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+ul.footer_social li a i.fa-pinterest {
+  color: #C92228;
+}
+
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+ul.footer_social li a i.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+ul.footer_social li a i.fa-instagram {
+  color: #8a3ab9;
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-skype:before {
+  content: "\f17e";
+}
+
+.contact-form-wraper {
+  animation-duration: 1s;
+}
+
+@media (min-width: 768px) {
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
   }
 }

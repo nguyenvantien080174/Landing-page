@@ -2,6 +2,7 @@
   background: #f1faff;
   padding: 90px 0 100px 0;
 }
+
 .col-md-12 {
   text-align: center !important;
   margin-bottom: 10px !important;
@@ -11,6 +12,7 @@
   padding-right: 15px;
   padding-left: 15px;
 }
+
 .section-title {
   margin-bottom: 10px;
   font-size: 38px;
@@ -20,17 +22,20 @@
   color: #071e55;
   font-weight: 700;
 }
+
 p.section-subtitle {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 28px !important;
   font-weight: 400;
   color: #7c8595;
   margin-bottom: 20px;
   font-family: "Open Sans", sans-serif;
 }
+
 .services-wrapper {
   position: relative;
 }
+
 .main-services {
   position: relative;
   margin: 10px 5px;
@@ -38,9 +43,11 @@ p.section-subtitle {
   text-align: center;
   transition: all 1s;
 }
+
 .main-services.blue i {
   background-color: #1e90ff;
 }
+
 .main-services i {
   margin-bottom: 15px;
   display: inline-block;
@@ -54,10 +61,12 @@ p.section-subtitle {
   border-radius: 20px;
   background-color: #e52f37;
 }
+
 .main-services:hover {
   transform: scale(1.025);
   transition: all 1s;
 }
+
 .main-services {
   position: relative;
   margin: 10px 5px;
@@ -65,6 +74,7 @@ p.section-subtitle {
   text-align: center;
   transition: all 1s;
 }
+
 .main-services.blue i {
   background-color: #1e90ff;
   border-radius: 20px;
@@ -77,6 +87,7 @@ p.section-subtitle {
   padding: 16px;
   text-align: center;
 }
+
 .main-services i {
   margin-bottom: 15px;
   display: inline-block;
@@ -91,11 +102,7 @@ p.section-subtitle {
   background-color: #e52f37;
   box-sizing: border-box;
 }
-.col-md-4 {
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-}
+
 .main-services h4 {
   margin-bottom: 10px;
   font-size: 21px;
@@ -105,6 +112,7 @@ p.section-subtitle {
   margin-top: 0;
   color: #071e55;
 }
+
 .main-services p {
   padding: 0 10px;
   margin-bottom: 15px;
@@ -114,6 +122,7 @@ p.section-subtitle {
   color: #7c8595;
   font-family: "Open Sans", sans-serif;
 }
+
 .main-services.green i {
   background-color: #27b36a;
 }
