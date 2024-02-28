@@ -1,0 +1,62 @@
+.imgscroll {
+    transform: translateX(-800px);
+    transition-duration: 1s;
+}
+
+.img-active {
+    transform: translateX(0px);
+}
+
+.fadeIn1 {
+    opacity: 0;
+}
+
+.fadeIn-active {
+    animation-delay: 0.25s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.featurebox1 {
+    opacity: 0;
+}
+
+.featurebox2 {
+    opacity: 0;
+}
+
+.featurebox3 {
+    opacity: 0;
+}
+
+.featurebox4 {
+    opacity: 0;
+}
+
+.featurebox5 {
+    opacity: 0;
+}
+
+.featurebox6 {
+    opacity: 0;
+}
+
+.featurebox-active {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+}
+
+.whitebox {
+    opacity: 0;
+}
+
+.redbox {
+    opacity: 0;
+}
+
+.endform {
+    opacity: 0;
+}

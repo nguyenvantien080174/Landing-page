@@ -36,7 +36,7 @@ body {
   width: 100vw;
   height: 90px;
   background-color: rgb(255, 255, 255);
-  position: fixed;
+  position: absolute ;
   top: 0;
   left: 0;
   display: flex;
@@ -46,11 +46,12 @@ body {
   box-sizing: border-box;
   z-index: 100;
   border-bottom: 1px solid #efefef;
-  opacity: 0;
 }
-.nav-active{
-  opacity: 1;
+
+.nav-active {
+  position: fixed;
 }
+
 .navbar .container {
   width: 1140px;
   height: 52px;
@@ -117,7 +118,6 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar .container {
-    position: fixed;
     max-width: 760px;
   }
 
