@@ -1,3 +1,20 @@
+@media (max-width: 991px) {
+  .home-section {
+    padding-top: 170px;
+    padding-bottom: 70px;
+    background-attachment: inherit;
+  }
+}
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 65px;
+    padding-bottom: 90px;
+    background-attachment: inherit;
+  }
+}
+
+
+
 .container {
   width: 100%;
 }
@@ -12,6 +29,7 @@
 @media only screen and (min-width: 768px) and (max-width:1200px) {
   body {
     min-width: 100%;
+    `
   }
 
 }

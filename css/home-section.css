@@ -139,7 +139,15 @@ h1 {
     padding: 40px 40px;
     background: rgba(255, 255, 255, 1);
     border-radius: 5px 5px;
+    /* opacity: 0;
+    transform: translateX(-400px);
+    transition: 2s all ease; */
 }
+
+/* .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 .register-form-wrapper h3 {
     margin-bottom: 5px;
@@ -244,14 +252,17 @@ p.register-form-terms {
     color: #7c8595;
     text-shadow: none;
 }
-@keyframes doublePulsation{
+
+@keyframes doublePulsation {
     0% {
         -webkit-transform: scale(1.0, 1.0);
         opacity: 0.0;
     }
+
     50% {
         opacity: 0.55;
     }
+
     100% {
         -webkit-transform: scale(1.3, 1.3);
         opacity: 0.0;
