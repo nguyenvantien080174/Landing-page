@@ -51,8 +51,8 @@
 
 
 
-    <div id="navclick" class="nav1">
-      <div class="container" style="display: block;height: fit-content;">
+    <div id="navclick" class="nav1" style="height: 0px; transition: all 0.1s ease-in; display: none;">
+      <div id="connav" class="container" style="opacity: 0; height: fit-content; transition:all 0.3s ease-in; transition-delay: 1s;">
         <div class="chi">Home</div>
         <div class="chi">About</div>
         <div class="chi">Testimonials</div>
@@ -369,8 +369,7 @@
         <div class="col-md-6">
           <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-              aria-controls="v-pills-home" aria-selected="true" onclick="panel1()">
+            <a class="nav-link active" id="v-pills-home-tab" onclick="panel1()">
               <!--begin features-second -->
               <div class="features-second">
                 <div class="dropcaps-circle blue">
@@ -387,8 +386,7 @@
               <!--end features-second-->
             </a>
 
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-              aria-controls="v-pills-profile" aria-selected="false" onclick="panel2()">
+            <a class="nav-link" id="v-pills-profile-tab" onclick="panel2()">
               <!--begin features-second-->
               <div class="features-second">
                 <div class="dropcaps-circle red">
@@ -407,8 +405,7 @@
               <!--end features-second-->
             </a>
 
-            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-              aria-controls="v-pills-messages" aria-selected="false" onclick="panel3()">
+            <a class="nav-link" id="v-pills-messages-tab" onclick="panel3()">
               <!--begin features-second-->
               <div class="features-second">
                 <div class="dropcaps-circle green">
@@ -583,9 +580,9 @@
           <!--begin accordion -->
           <div class="accordion" id="accordionFAQ">
             <!--begin card -->
-            <div class="card">
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
-                <div class="card-body">
+            <div  id= "cac1"class="card">
+              <div id="card0" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ" style=" transition: all 0.3s ease-in; ">
+                <div id="collapseOne"  class="card-body" style="display: none;" >
                   Nemo enim ipsam voluptatem quia voluptas situm ets
                   aspernatis netsum loris fugit, sed quia magni dolores eos
                   quis ratione sequi etum nets vesciunt neque.
@@ -607,9 +604,9 @@
             <!--end card -->
 
             <!--begin card -->
-            <div class="card">
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ" style="">
-                <div class="card-body">
+            <div  class="card">
+              <div id="cardtwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ" style="ransition: all 0.3s ease-in;">
+                <div  id="collapseTwo" class="card-body" style="display: none;" >
                   Nemo enim ipsam voluptatem quia voluptas situm ets
                   aspernatis netsum loris fugit, sed quia magni dolores eos
                   quis ratione sequi etum nets vesciunt neque.
@@ -631,10 +628,10 @@
             <!--end card -->
 
             <!--begin card -->
-            <div class="card">
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ"
-                style=" transition-timing-function: ease-in; ">
-                <div class="card-body">
+            <div   class="card">
+              <div id="cardthree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ"
+                style="transition: all 0.3s ease-in; ">
+                <div id="collapseThree" class="card-body" style="display: none;">
                   Nemo enim ipsam voluptatem quia voluptas situm ets
                   aspernatis netsum loris fugit, sed quia magni dolores eos
                   quis ratione sequi etum nets vesciunt neque.
@@ -1236,7 +1233,7 @@
                   <textarea class="contact-input" rows="2" cols="20" name="contact_message"
                     placeholder="Your Message..."></textarea>
 
-                  <div  class="contact-submit" type="submit" onclick="submitTwo()" > Get In Touch</div>
+                  <div class="contact-submit" type="submit" onclick="submitTwo()"> Get In Touch</div>
                 </div>
                 <!--end col-md-12-->
               </form>
@@ -1311,278 +1308,8 @@
   </div>
 
 
-  <script>
-    // alert("Hello world!");
-    function submitTwo(){
-      const sub3 = document.getElementById ("contact-form")
-      const sub4 = document.getElementById ("submit2")
-      if( sub4.style.display == "none"){
-        sub3.style.display= "none";
-        sub4.style.display= "block";
-      }
-    }
+  <script src="js/main.js">
 
-
-
-    function sub0() {
-      const x = document.getElementById("sub0")
-      const y = document.getElementById("register-form")
-      if (x.style.display == "none") {
-        x.style.display = "block";
-        y.style.display = "none";
-      }
-    }
-
-
-    function panel1() {
-      const tmp1 = document.getElementById("v-pills-home");
-      const tmp2 = document.getElementById("v-pills-profile")
-      const tmp3 = document.getElementById("v-pills-messages")
-      if (tmp1.style.display == "none") {
-        tmp1.style.display = "block";
-        tmp2.style.display = "none";
-        tmp3.style.display = "none"
-      }
-    }
-
-    function panel2() {
-      const tmp1 = document.getElementById("v-pills-home");
-      const tmp2 = document.getElementById("v-pills-profile")
-      const tmp3 = document.getElementById("v-pills-messages")
-      if (tmp2.style.display == "none") {
-        tmp2.style.display = "block";
-        tmp1.style.display = "none";
-        tmp3.style.display = "none"
-      }
-    }
-
-    function panel3() {
-      const tmp1 = document.getElementById("v-pills-home");
-      const tmp2 = document.getElementById("v-pills-profile")
-      const tmp3 = document.getElementById("v-pills-messages")
-      if (tmp3.style.display == "none") {
-        tmp3.style.display = "block";
-        tmp2.style.display = "none";
-        tmp1.style.display = "none"
-      }
-    }
-
-    function nav() {
-      const nav = document.getElementById("navclick")
-      if (nav.style.display == "none") {
-        nav.style.display = "block";
-      } else {
-        nav.style.display = "none";
-      }
-    }
-
-
-    function submmitTwo() {
-      const sub2 = document.getElementById("submit2")
-      const sub1 = document.getElementById("contact-form")
-      sub2.style.display = "block";
-      sub1.style.display = "none";
-    }
-
-
-
-    function handleClickHeadingOne() {
-      const tmp = document.getElementById("collapseOne");
-      const tmp1 = document.getElementById("collapseTwo");
-      const tmp2 = document.getElementById("collapseThree");
-      // tmp.style.display = "block";
-      if (tmp.style.display == "none") {
-        tmp.style.display = "block";
-        tmp1.style.display = "none";
-        tmp2.style.display = "none"
-      } else {
-        tmp.style.display = "none";
-      }
-
-    }
-
-    function handleClickHeadingTwo() {
-      const tmp3 = document.getElementById("collapseOne");
-      const tmp4 = document.getElementById("collapseTwo");
-      const tmp5 = document.getElementById("collapseThree");
-      // tmp.style.display = "block";
-      if (tmp4.style.display == "none") {
-        tmp4.style.display = "block";
-        tmp3.style.display = "none";
-        tmp5.style.display = "none"
-      } else {
-        tmp4.style.display = "none";
-      }
-
-    }
-
-    function handleClickHeadingThree() {
-      const tmp = document.getElementById("collapseOne");
-      const tmp1 = document.getElementById("collapseTwo");
-      const tmp2 = document.getElementById("collapseThree");
-      // tmp.style.display = "block";
-      if (tmp2.style.display == "none") {
-        tmp2.style.display = "block";
-        tmp.style.display = "none";
-        tmp1.style.display = "none"
-      } else {
-        tmp2.style.display = "none";
-      }
-
-    }
-
-
-    // HANDLESCROLL FOR NAVBAR//
-    const handleScroll1 = (type, offset) => {
-      const navbar = document.querySelector(".navbar");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition > offset) {
-        navbar.classList.add(type + "-active");
-      } else {
-        navbar.classList.remove(type + "-active");
-      }
-    }
-    window.addEventListener("scroll", () => handleScroll1('nav', 500));
-
-
-    // //HANDLESCROLL FOR FORM
-    // BUG neu ko scroll thi ko chay
-    const handleScroll2 = (type, offset) => {
-      const form = document.querySelector(".wow");
-      const scrollPosition = window.pageYOffset;
-      console.log('check', scrollPosition)
-      if (scrollPosition >= (offset - 220) && scrollPosition <= (offset + 200)) {
-        form.classList.add(type + "-active");
-      }
-      //  else {
-      // //  form.classList.remove(type + "-active");
-      // form.classList.remove(type + "-active");
-      // }
-    }
-    window.addEventListener("scroll", () => handleScroll2('form', 200));
-
-    // IMG SCROLL 
-    const handleScroll3 = (type, offset) => {
-      const img = document.querySelector(".imgscroll");
-      const scrollPosition = window.pageYOffset;
-      console.log('check', scrollPosition)
-      if (scrollPosition >= (offset - 300) && scrollPosition <= (offset + 200)) {
-        img.classList.add(type + "-active");
-      }
-    }
-
-    window.addEventListener("scroll", () => handleScroll3('img', 1480));
-
-
-
-    // 2
-    const handleScroll4 = (type, offset) => {
-      const img1 = document.querySelector(".fadeIn1");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 400) && scrollPosition <= (offset + 300)) {
-        img1.classList.add(type + "-active");
-      }
-    }
-
-    window.addEventListener("scroll", () => handleScroll4('fadeIn', 3900));
-
-
-
-    // featurebox
-    const handleScroll51 = (type, offset) => {
-      const box1 = document.querySelector(".featurebox1");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 300)) {
-        box1.classList.add(type + "-active");
-      }
-    }
-
-    window.addEventListener("scroll", () => handleScroll51('fadeIn', 6100));
-
-
-    const handleScroll52 = (type, offset) => {
-      const box2 = document.querySelector(".featurebox2");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 300)) {
-        box2.classList.add(type + "-active");
-      }
-    }
-    window.addEventListener("scroll", () => handleScroll52('fadeIn', 6100));
-
-    const handleScroll53 = (type, offset) => {
-      const box3 = document.querySelector(".featurebox3");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 300)) {
-        box3.classList.add(type + "-active");
-      }
-    }
-    window.addEventListener("scroll", () => handleScroll53('fadeIn', 6100));
-
-    const handleScroll54 = (type, offset) => {
-      const box4 = document.querySelector(".featurebox4");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 300)) {
-        box4.classList.add(type + "-active");
-      }
-    }
-    window.addEventListener("scroll", () => handleScroll54('fadeIn', 6100));
-
-
-
-    const handleScroll55 = (type, offset) => {
-      const box5 = document.querySelector(".featurebox5");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 300)) {
-        box5.classList.add(type + "-active");
-      }
-    }
-    window.addEventListener("scroll", () => handleScroll55('fadeIn', 6100));
-
-    const handleScroll56 = (type, offset) => {
-      const box6 = document.querySelector(".featurebox6");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 300)) {
-        box6.classList.add(type + "-active");
-      }
-    }
-    window.addEventListener("scroll", () => handleScroll56('fadeIn', 6100));
-
-
-
-
-    // 
-    const handleScroll61 = (type, offset) => {
-      const white = document.querySelector(".whitebox");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 200)) {
-        white.classList.add(type + "-active");
-      }
-    }
-
-    window.addEventListener("scroll", () => handleScroll61('form', 6900));
-
-
-
-    const handleScroll62 = (type, offset) => {
-      const red = document.querySelector(".redbox");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 200) && scrollPosition <= (offset + 200)) {
-        red.classList.add(type + "-active");
-      }
-    }
-
-    window.addEventListener("scroll", () => handleScroll62('form', 6900));
-
-
-    const handleScroll7 = (type, offset) => {
-      const endform = document.querySelector(".endform");
-      const scrollPosition = window.pageYOffset;
-      if (scrollPosition >= (offset - 400) && scrollPosition <= (offset + 200)) {
-        endform.classList.add(type + "-active");
-      }
-    }
-
-    window.addEventListener("scroll", () => handleScroll7('form', 8300));
   </script>
 </body>
 

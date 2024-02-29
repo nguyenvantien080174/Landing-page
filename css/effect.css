@@ -60,3 +60,12 @@
 .endform {
     opacity: 0;
 }
+
+.card {
+    transition: all 2s ease-in-out !important;
+}
+
+.collapse {
+    height: 0px;
+    transition: all 2s ease-in;
+}

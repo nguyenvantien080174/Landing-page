@@ -41,9 +41,6 @@ section {
   background-color: #fff;
   border: 1px solid #f4f5f6 !important;
   border-radius: 8px !important;
-  box-shadow: 0 12px 55px 0 rgba(0, 0, 0, 0.05) !important;
-  -moz-box-shadow: 0 12px 55px 0 rgba(0, 0, 0, 0.05) !important;
-  -webkit-box-shadow: 0 12px 55px 0 rgba(0, 0, 0, 0.05) !important;
   transition: all 1s;
 }
 
@@ -362,7 +359,8 @@ h6 {
   border: none;
   background-color: #fff !important;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  
+  transition: all 2s ease-in;
+
 }
 
 .card {
@@ -379,12 +377,10 @@ h6 {
   border-radius: 0.25rem;
 }
 
-.collapse:not(.show) {
-  display: none;
-}
-.conllapse{
-  transition: all 0.5s ease;
-}
+
+
+
+
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
