@@ -1,3 +1,15 @@
+@media (max-width: 549px) {
+  .navbar .nav1 {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 390px) {
+  .navbar .nav1 {
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 991px) {
   .home-section {
     padding-top: 170px;
@@ -5,6 +17,7 @@
     background-attachment: inherit;
   }
 }
+
 @media (max-width: 768px) {
   .home-section {
     padding-top: 65px;
@@ -13,6 +26,11 @@
   }
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  #cac1 {
+    width: 328px;
+  }
+}
 
 
 .container {

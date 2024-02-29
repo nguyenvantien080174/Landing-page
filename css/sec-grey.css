@@ -455,7 +455,6 @@ button,
 select {
   text-transform: none;
 }
-
 img.testim-img {
   float: left;
   margin-right: 15px;
@@ -475,7 +474,8 @@ img.testim-img {
 }
 
 p.testim-name {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-header h5 .btn-link p {

@@ -70,20 +70,20 @@ function panel3() {
 
 function nav() {
   const nav = document.getElementById("navclick");
-  const con= document.getElementById("connav");
+  const con = document.getElementById("connav");
   if (nav.style.height == "0px") {
-    nav.style.transition=" all 0.1s ease-in";
+    nav.style.transition = " all 0.1s ease-in";
     nav.style.display = "block";
     nav.style.height = "280px";
-    con.style.transitionDelay="0.3s"
-    con.style.opacity= "1";
-    con.style.display= "block";
-    nav.style.transition=" all 0.3s ease-in";
+    con.style.transitionDelay = "0.3s";
+    con.style.opacity = "1";
+    con.style.display = "block";
+    nav.style.transition = " all 0.3s ease-in";
   } else {
-    nav.style.height="0px";
-    con.style.transitionDelay="0s";
-    con.style.transitionDuration="0.1s";
-    con.style.opacity="0";
+    nav.style.height = "0px";
+    con.style.transitionDelay = "0s";
+    con.style.transitionDuration = "0.1s";
+    con.style.opacity = "0";
   }
 }
 
@@ -95,31 +95,26 @@ function submmitTwo() {
 }
 
 function handleClickHeadingOne() {
-  const cac1= document.getElementById("cac1") 
-  const card = document.getElementById("card0");
+  const cac1 = document.getElementById("cac1");
+  const card0 = document.getElementById("card0");
   const card1 = document.getElementById("cardtwo");
   const card2 = document.getElementById("cardthree");
   const tmp = document.getElementById("collapseOne");
   const tmp1 = document.getElementById("collapseTwo");
   const tmp2 = document.getElementById("collapseThree");
   // tmp.style.display = "block";
-  if (tmp.style.display == "none") { 
-    card.style.height= "120px"
+  if (tmp.style.display == "none") {
+    card0.style.height = "105px";
     tmp.style.display = "block";
-    card.style.display = "block";
-    card.style.transition = " all 0.3s ease-in ";
+    card0.style.display = "block";
+    card0.style.transition = " all 0.3s ease-in ";
     tmp1.style.display = "none";
     tmp2.style.display = "none";
     card1.style.height = "0px";
     card2.style.height = "0px";
-
   } else {
     tmp.style.display = "none";
-    card.style.height = "0px";
-  }
-
-  if( card.style.width < "328px" ){
-    card.style.height = "180px !importain";
+    card0.style.height = "0px";
   }
 }
 
@@ -132,7 +127,7 @@ function handleClickHeadingTwo() {
   const tmp5 = document.getElementById("collapseThree");
   // tmp.style.display = "block";
   if (tmp4.style.display == "none") {
-    card1.style.height= "120px";
+    card1.style.height = "105px";
     card1.style.display = "block";
     card1.style.transition = " all 0.3s ease-in ";
     tmp4.style.display = "block";
@@ -155,7 +150,7 @@ function handleClickHeadingThree() {
   const tmp2 = document.getElementById("collapseThree");
   // tmp.style.display = "block";
   if (tmp2.style.display == "none") {
-    card2.style.height= "120px";
+    card2.style.height = "105px";
     card.style.display = "block";
     card2.style.transition = " all 0.3s ease-in ";
     tmp2.style.display = "block";
@@ -179,15 +174,32 @@ const handleScroll1 = (type, offset) => {
     navbar.classList.remove(type + "-active");
   }
 };
-window.addEventListener("scroll", () => handleScroll1("nav", 500));
+
+let offsetNav = 0;
+window.innerWidth >= 1024 ? (offsetNav = 500) : 800;
+window.addEventListener("scroll", () => handleScroll1("nav", offsetNav));
 
 // //HANDLESCROLL FOR FORM
 // BUG neu ko scroll thi ko chay
-const handleScroll2 = (type, offset) => {
+console.log();
+
+const auto = () => {
   const form = document.querySelector(".wow");
   const scrollPosition = window.pageYOffset;
   console.log("check", scrollPosition);
-  if (scrollPosition >= offset - 220 && scrollPosition <= offset + 200) {
+  if (scrollPosition == 0) {
+    form.classList.add("form" + "-active");
+  }
+};
+window.addEventListener("load", () => auto());
+
+const handleScroll2 = (type, offset) => {
+  const form = document.querySelector(".wow");
+  const scrollPosition = window.pageYOffset;
+  if (
+    (scrollPosition >= 0 && scrollPosition <= offset + 200) ||
+    scrollPosition == 0
+  ) {
     form.classList.add(type + "-active");
   }
   //  else {
@@ -195,7 +207,9 @@ const handleScroll2 = (type, offset) => {
   // form.classList.remove(type + "-active");
   // }
 };
-window.addEventListener("scroll", () => handleScroll2("form", 200));
+let x1 = 0;
+window.innerWidth >= 1024 ? (x1 = 500) : 700;
+window.addEventListener("scroll", () => handleScroll2("form", x1));
 
 // IMG SCROLL
 const handleScroll3 = (type, offset) => {
@@ -306,3 +320,46 @@ const handleScroll7 = (type, offset) => {
 };
 
 window.addEventListener("scroll", () => handleScroll7("form", 8300));
+
+// img click
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+const counter = document.getElementById("counter");
+
+function openLightbox(index) {
+  currentSlide = index;
+  showSlide(currentSlide);
+  document.getElementById("lightbox").style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.style.display = "block";
+    } else {
+      slide.style.display = "none";
+    }
+  });
+  updateCounter();
+}
+
+function changeSlide(n) {
+  currentSlide += n;
+  if (currentSlide >= totalSlides) {
+    currentSlide = 0;
+  } else if (currentSlide < 0) {
+    currentSlide = totalSlides - 1;
+  }
+  showSlide(currentSlide);
+}
+
+function updateCounter() {
+  counter.textContent = `${currentSlide + 1} of ${totalSlides}`;
+}
+
+document.getElementById("close").addEventListener("click", closeLightbox);
