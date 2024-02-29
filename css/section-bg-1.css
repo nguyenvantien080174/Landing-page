@@ -309,7 +309,7 @@ textarea {
   line-height: inherit;
 }
 
-input.contact-submit {
+div.contact-submit {
   background: #fff;
   border: none;
   color: #e52f37;
@@ -329,7 +329,7 @@ input.contact-submit {
   -moz-transition: all .50s ease-in-out;
   -webkit-transition: all .50s ease-in-out;
 }
-input.contact-submit:hover {
+div.contact-submit:hover {
   background: #eaeaea;
   transition: all .50s ease-in-out;
   -moz-transition: all .50s ease-in-out;

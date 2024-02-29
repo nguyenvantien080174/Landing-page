@@ -185,9 +185,7 @@ h6 {
   box-shadow: 10px 12px 40px rgba(0, 0, 0, 0.2);
 }
 
-.fade:not(.show) {
-  opacity: 0;
-}
+
 
 /* xong sec grey 1 */
 @media only screen and (min-width: 576px) {
@@ -364,6 +362,7 @@ h6 {
   border: none;
   background-color: #fff !important;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  
 }
 
 .card {
@@ -383,7 +382,9 @@ h6 {
 .collapse:not(.show) {
   display: none;
 }
-
+.conllapse{
+  transition: all 0.5s ease;
+}
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;

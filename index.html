@@ -13,7 +13,6 @@
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="./js/main.js">
   <link rel="stylesheet" href="./css/effect.css">
   <link rel="stylesheet" href="./css/branch.css" />
   <link rel="stylesheet" href="./css/home-section.css" />
@@ -30,7 +29,9 @@
 
 
 
-  <div class="navbar navbar-fixed-top ">
+  <div class="navbar navbar-fixed-top " style="display: block;">
+
+
     <div class="container">
       <div class="navbar-brands">LaunchPage</div>
       <div class="navbar-collapsed">
@@ -42,80 +43,30 @@
         <div class="child">Features</div>
         <div class="child">Pricing</div>
         <div class="child1">Get Started</div>
-        <div class="setting">
+        <div class="setting" onclick="nav()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </div>
+
+
+
+    <div id="navclick" class="nav1">
+      <div class="container" style="display: block;height: fit-content;">
+        <div class="chi">Home</div>
+        <div class="chi">About</div>
+        <div class="chi">Testimonials</div>
+        <div class="chi">Work</div>
+        <div class="chi">Team</div>
+        <div class="chi">Features</div>
+        <div class="chi">Pricing</div>
+        <div class="chi1">Get Started</div>
+      </div>
+    </div>
+
   </div>
   <!-- thanh navbar -->
 
-  <!-- <div class="home-section">
-      <img src="./img/bg0.jpg" alt="anh nen" />
-      <div class="over-play"></div>
-      <div class="container">
-        <div class="row">
-          <div class="bigtext">
-            <h1>Award-Winning Agency Based In Manchested</h1>
-
-            <p class="herotext">
-              Excepteur sint occaecat cupidatat nonet proident, vante nisn culpa
-              qui officia deserunt etimus quis autem nets lorem entimus velis
-              netsad.
-            </p>
-            <div class="popup">
-              <div class="video-icon">
-                <div class="icon-play">
-                  <i class="fa-solid fa-play">
-                    <div class="efect"></div>
-                  </i>
-                  <span>Watch Presentation Video</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="paddingform">
-            <div class="form">
-              <h3>Get Your Free 14-Day Trial</h3>
-              <p>Velis demo enim quia tempor magnet.</p>
-             
-              <input
-                class="box-name"
-                required=""
-                name="register_names"
-                placeholder="Company Name*"
-                type="text"
-              />
-              ->
-              <input
-                class="box-email"
-                required=""
-                name="register_email"
-                placeholder="Email Adress*"
-                type="email"
-              />
-              <select class="box-option" required="" name="register_ticket">
-                <option value="">We need LaunchPage for...</option>
-
-                <option value="Individual">Our Support Team</option>
-
-                <option value="Professional">Our Sales Department</option>
-              </select>
-             
-              <input
-                value="Start My Free 14-Day Trial"
-                class="box-enter"
-                type="submit"
-              />
-              <p class="register-form-terms">
-                No Credit Card • No Installation Required
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
   <!-- home-section   -->
   <section class="home-section" id="home">
     <div class="home-section-overlay"></div>
@@ -161,7 +112,7 @@
             <!--begin form-->
             <div>
               <!--begin success message -->
-              <p class="register_success_box" style="display: none">
+              <p id="sub0" class="register_success_box" style="display: none">
                 We received your message and you will hear from us soon. Thank
                 You!
               </p>
@@ -183,7 +134,7 @@
                   <option value="Professional">Our Sales Department</option>
                 </select>
 
-                <input value="Start My Free 14-Day Trial" class="register-submit" type="submit" />
+                <div class="register-submit1" onclick="sub0()"> Start My Free 14-Day Trial</div>
               </form>
               <!--end register form -->
 
@@ -419,7 +370,7 @@
           <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-              aria-controls="v-pills-home" aria-selected="true">
+              aria-controls="v-pills-home" aria-selected="true" onclick="panel1()">
               <!--begin features-second -->
               <div class="features-second">
                 <div class="dropcaps-circle blue">
@@ -437,7 +388,7 @@
             </a>
 
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-              aria-controls="v-pills-profile" aria-selected="false">
+              aria-controls="v-pills-profile" aria-selected="false" onclick="panel2()">
               <!--begin features-second-->
               <div class="features-second">
                 <div class="dropcaps-circle red">
@@ -457,7 +408,7 @@
             </a>
 
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-              aria-controls="v-pills-messages" aria-selected="false">
+              aria-controls="v-pills-messages" aria-selected="false" onclick="panel3()">
               <!--begin features-second-->
               <div class="features-second">
                 <div class="dropcaps-circle green">
@@ -480,17 +431,20 @@
         <!--begin col-md-6 -->
         <div class="col-md-6">
           <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+              style="display: block;">
               <img src="./img/about2.jpg" class="width-100 image-shadow top-margins-images" alt="pic" />
             </div>
 
-            <!-- <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"> 
-                      <img src="./img/about5.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
-                  </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+              style="display: none;">
+              <img src="./img/about5.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
+            </div>
 
-                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                      <img src="./img/about1.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
-                  </div> -->
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+              style="display: none;">
+              <img src="./img/about1.jpg" class="width-100 image-shadow top-margins-images" alt="pic">
+            </div>
           </div>
         </div>
         <!--end col-md-6 -->
@@ -630,7 +584,7 @@
           <div class="accordion" id="accordionFAQ">
             <!--begin card -->
             <div class="card">
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ" style="">
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                 <div class="card-body">
                   Nemo enim ipsam voluptatem quia voluptas situm ets
                   aspernatis netsum loris fugit, sed quia magni dolores eos
@@ -638,7 +592,7 @@
                 </div>
               </div>
 
-              <div class="card-header" id="headingOne">
+              <div class="card-header" id="headingOne" onclick="handleClickHeadingOne()">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="false" aria-controls="collapseOne">
@@ -662,7 +616,7 @@
                 </div>
               </div>
 
-              <div class="card-header" id="headingTwo">
+              <div class="card-header" id="headingTwo" onclick="handleClickHeadingTwo()">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
@@ -679,7 +633,7 @@
             <!--begin card -->
             <div class="card">
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ"
-                style="">
+                style=" transition-timing-function: ease-in; ">
                 <div class="card-body">
                   Nemo enim ipsam voluptatem quia voluptas situm ets
                   aspernatis netsum loris fugit, sed quia magni dolores eos
@@ -687,7 +641,7 @@
                 </div>
               </div>
 
-              <div class="card-header" id="headingThree">
+              <div class="card-header" id="headingThree" onclick="handleClickHeadingThree()">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -1245,14 +1199,14 @@
             <!--begin form-->
             <div>
               <!--begin success message -->
-              <p class="contact_success_box" style="display: none">
+              <p id="submit2" class="contact_success_box" style="display: none">
                 We received your message and you will hear from us soon. Thank
                 You!
               </p>
               <!--end success message -->
 
               <!--begin contact form -->
-              <form id="contact-form" class="row contact-form contact endform" action="php/contact.php" method="post">
+              <form id="contact-form" class="row contact-form contact endform">
                 <!--begin col-md-6-->
                 <div class="col-md-6">
                   <input class="contact-input" required="" name="contact_names" placeholder="Your Name*" type="text" />
@@ -1282,7 +1236,7 @@
                   <textarea class="contact-input" rows="2" cols="20" name="contact_message"
                     placeholder="Your Message..."></textarea>
 
-                  <input value="Get In Touch" class="contact-submit" type="submit" />
+                  <div  class="contact-submit" type="submit" onclick="submitTwo()" > Get In Touch</div>
                 </div>
                 <!--end col-md-12-->
               </form>
@@ -1359,23 +1313,123 @@
 
   <script>
     // alert("Hello world!");
+    function submitTwo(){
+      const sub3 = document.getElementById ("contact-form")
+      const sub4 = document.getElementById ("submit2")
+      if( sub4.style.display == "none"){
+        sub3.style.display= "none";
+        sub4.style.display= "block";
+      }
+    }
 
 
-    // function handleScroll(type, offset) {
-    //   const navbar = document.querySelector(".navbar");
-    //   const scrollPosition = window.pageYOffset;
-    //   // alert("Hello world!");
 
-    //   if (scrollPosition > offset) {
-    //     navbar.classList.add(type + "-active");
-    //   }
-    // }
+    function sub0() {
+      const x = document.getElementById("sub0")
+      const y = document.getElementById("register-form")
+      if (x.style.display == "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+      }
+    }
 
-    // function handleClick() {
-    //   navbar.classList.add("click-active");
-    // }
 
-    // window.addEventListener("scroll", handleScroll("nav", 600));
+    function panel1() {
+      const tmp1 = document.getElementById("v-pills-home");
+      const tmp2 = document.getElementById("v-pills-profile")
+      const tmp3 = document.getElementById("v-pills-messages")
+      if (tmp1.style.display == "none") {
+        tmp1.style.display = "block";
+        tmp2.style.display = "none";
+        tmp3.style.display = "none"
+      }
+    }
+
+    function panel2() {
+      const tmp1 = document.getElementById("v-pills-home");
+      const tmp2 = document.getElementById("v-pills-profile")
+      const tmp3 = document.getElementById("v-pills-messages")
+      if (tmp2.style.display == "none") {
+        tmp2.style.display = "block";
+        tmp1.style.display = "none";
+        tmp3.style.display = "none"
+      }
+    }
+
+    function panel3() {
+      const tmp1 = document.getElementById("v-pills-home");
+      const tmp2 = document.getElementById("v-pills-profile")
+      const tmp3 = document.getElementById("v-pills-messages")
+      if (tmp3.style.display == "none") {
+        tmp3.style.display = "block";
+        tmp2.style.display = "none";
+        tmp1.style.display = "none"
+      }
+    }
+
+    function nav() {
+      const nav = document.getElementById("navclick")
+      if (nav.style.display == "none") {
+        nav.style.display = "block";
+      } else {
+        nav.style.display = "none";
+      }
+    }
+
+
+    function submmitTwo() {
+      const sub2 = document.getElementById("submit2")
+      const sub1 = document.getElementById("contact-form")
+      sub2.style.display = "block";
+      sub1.style.display = "none";
+    }
+
+
+
+    function handleClickHeadingOne() {
+      const tmp = document.getElementById("collapseOne");
+      const tmp1 = document.getElementById("collapseTwo");
+      const tmp2 = document.getElementById("collapseThree");
+      // tmp.style.display = "block";
+      if (tmp.style.display == "none") {
+        tmp.style.display = "block";
+        tmp1.style.display = "none";
+        tmp2.style.display = "none"
+      } else {
+        tmp.style.display = "none";
+      }
+
+    }
+
+    function handleClickHeadingTwo() {
+      const tmp3 = document.getElementById("collapseOne");
+      const tmp4 = document.getElementById("collapseTwo");
+      const tmp5 = document.getElementById("collapseThree");
+      // tmp.style.display = "block";
+      if (tmp4.style.display == "none") {
+        tmp4.style.display = "block";
+        tmp3.style.display = "none";
+        tmp5.style.display = "none"
+      } else {
+        tmp4.style.display = "none";
+      }
+
+    }
+
+    function handleClickHeadingThree() {
+      const tmp = document.getElementById("collapseOne");
+      const tmp1 = document.getElementById("collapseTwo");
+      const tmp2 = document.getElementById("collapseThree");
+      // tmp.style.display = "block";
+      if (tmp2.style.display == "none") {
+        tmp2.style.display = "block";
+        tmp.style.display = "none";
+        tmp1.style.display = "none"
+      } else {
+        tmp2.style.display = "none";
+      }
+
+    }
 
 
     // HANDLESCROLL FOR NAVBAR//

@@ -4,7 +4,7 @@ const navbar = document.querySelector(".navbar");
 function handleScroll(type, offset) {
   const scrollPosition = window.pageYOffset;
   alert("Hello world!");
-  
+
   if (scrollPosition > offset) {
     navbar.classList.add(type + "-active");
   }
@@ -23,3 +23,4 @@ $(window).on("scroll", function () {
     $(".navbar-fixed-top").removeClass("opaque");
   }
 });
+
