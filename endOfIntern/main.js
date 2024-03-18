@@ -8,7 +8,7 @@ const signIn = () => {
 };
 const Log = ()=> {
   window.location.href =
-    "https://nguyenvantien080174.github.io/Landing-page/endOfIntern/login-sucess.html";
+    "https://nguyenvantien080174.github.io/Landing-page/endOfIntern/login.html";
 }
 // check cu phap cua email, pass va confirmpass;
 const checkSyntax = () => {
@@ -104,7 +104,7 @@ const getInfo = () => {
 const Login = () =>{
   if(checkmail()== 1){
     window.location.href =
-       "http://127.0.0.1:5500/login-sucess.html";
+       "https://nguyenvantien080174.github.io/Landing-page/endOfIntern/login-sucess.html";
   }
 }
 
