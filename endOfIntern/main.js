@@ -2,13 +2,13 @@ const signIn = () => {
   if (checkEmailTT() == 1 && checkSyntax()==1) {
     getInfo();
     window.location.href =
-    "http://127.0.0.1:5500/login.html";
+    "https://nguyenvantien080174.github.io/Landing-page/endOfIntern/login.html";
   }
 
 };
 const Log = ()=> {
   window.location.href =
-    "http://127.0.0.1:5500/login.html";
+    "https://nguyenvantien080174.github.io/Landing-page/endOfIntern/login-sucess.html";
 }
 // check cu phap cua email, pass va confirmpass;
 const checkSyntax = () => {
