@@ -163,8 +163,87 @@ function handleClickHeadingThree() {
     card2.style.height = "0px";
   }
 }
+// home scroll
+const Scroll1 = () => {
+  const navbar = document.querySelector(".c2");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 700 && scrollPosition < 2800) {
+    navbar.classList.add("c2" + "-active");
+  } else {
+    navbar.classList.remove("c2" + "-active");
+  }
+};
 
-// HANDLESCROLL FOR NAVBAR//
+window.addEventListener("scroll", () => Scroll1());
+
+
+const Scroll2 = () => {
+  const navbar = document.querySelector(".c3");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 2800 && scrollPosition < 3600) {
+    navbar.classList.add("c3" + "-active");
+  } else {
+    navbar.classList.remove("c3" + "-active");
+  }
+};
+
+window.addEventListener("scroll", () => Scroll2());
+
+
+const Scroll3 = () => {
+  const navbar = document.querySelector(".c4");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 3600 && scrollPosition < 4600) {
+    navbar.classList.add("c4" + "-active");
+  } else {
+    navbar.classList.remove("c4" + "-active");
+  }
+};
+
+window.addEventListener("scroll", () => Scroll3());
+
+
+
+const Scroll4 = () => {
+  const navbar = document.querySelector(".c5");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 4600 && scrollPosition < 5700) {
+    navbar.classList.add("c5" + "-active");
+  } else {
+    navbar.classList.remove("c5" + "-active");
+  }
+};
+
+window.addEventListener("scroll", () => Scroll4());
+
+
+const Scroll5 = () => {
+  const navbar = document.querySelector(".c6");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 5700 && scrollPosition < 7300) {
+    navbar.classList.add("c6" + "-active");
+  } else {
+    navbar.classList.remove("c6" + "-active");
+  }
+};
+
+window.addEventListener("scroll", () => Scroll5());
+
+
+const Scroll6 = () => {
+  const navbar = document.querySelector(".c7");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 7300 && scrollPosition < 8300) {
+    navbar.classList.add("c7" + "-active");
+  } else {
+    navbar.classList.remove("c7" + "-active");
+  }
+};
+
+window.addEventListener("scroll", () => Scroll6());
+
+
+// HANDLESCROLL FOR NAVBAR//`
 const handleScroll1 = (type, offset) => {
   const navbar = document.querySelector(".navbar");
   const scrollPosition = window.pageYOffset;
@@ -179,6 +258,60 @@ let offsetNav = 0;
 window.innerWidth >= 1024 ? (offsetNav = 500) : 800;
 window.addEventListener("scroll", () => handleScroll1("nav", offsetNav));
 
+const Scroll1 = () => {
+  const c1 = document.querySelector(".c1");
+  const c2 = document.querySelector(".c2");
+  const c3 = document.querySelector(".c3");
+  const c4 = document.querySelector(".c4");
+  const c5 = document.querySelector(".c5");
+  const c6 = document.querySelector(".c6");
+  const c7 = document.querySelector(".c7");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 700 && scrollPosition < 2800) {
+    c2.classList.add("c2"+ "-active");
+    c3.classList.remove("c3"+ "-active");
+    c4.classList.remove("c4"+ "-active");
+    c5.classList.remove("c5"+ "-active");
+    c6.classList.remove("c6"+ "-active");
+    c7.classList.remove("c7"+ "-active");
+  } else if (scrollPosition > 2800 && scrollPosition < 3600) {
+    c3.classList.add("c2"+ "-active");
+    c2.classList.remove("c3"+ "-active");
+    c4.classList.remove("c4"+ "-active");
+    c5.classList.remove("c5"+ "-active");
+    c6.classList.remove("c6"+ "-active");
+    c7.classList.remove("c7"+ "-active");
+  } else if (scrollPosition > 3600 && scrollPosition < 4600) {
+    c4.classList.add("c2"+ "-active");
+    c3.classList.remove("c3"+ "-active");
+    c2.classList.remove("c4"+ "-active");
+    c5.classList.remove("c5"+ "-active");
+    c6.classList.remove("c6"+ "-active");
+    c7.classList.remove("c7"+ "-active");
+  } else if (scrollPosition > 4600 && scrollPosition < 5700) {
+    c5.classList.add("c2"+ "-active");
+    c3.classList.remove("c3"+ "-active");
+    c4.classList.remove("c4"+ "-active");
+    c2.classList.remove("c5"+ "-active");
+    c6.classList.remove("c6"+ "-active");
+    c7.classList.remove("c7"+ "-active");
+  } else if (scrollPosition > 5700 && scrollPosition < 7300) {
+    c6.classList.add("c2"+ "-active");
+    c3.classList.remove("c3"+ "-active");
+    c4.classList.remove("c4"+ "-active");
+    c5.classList.remove("c5"+ "-active");
+    c2.classList.remove("c6"+ "-active");
+    c7.classList.remove("c7"+ "-active");
+  } else if (scrollPosition > 7300 && scrollPosition < 8300) {
+    c7.classList.add("c2"+ "-active");
+    c3.classList.remove("c3"+ "-active");
+    c4.classList.remove("c4"+ "-active");
+    c5.classList.remove("c5"+ "-active");
+    c6.classList.remove("c6"+ "-active");
+    c2.classList.remove("c7"+ "-active");
+  }
+};
+window.addEventListener("scroll", () => Scroll1());
 // //HANDLESCROLL FOR FORM
 // BUG neu ko scroll thi ko chay
 console.log();

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .log{
+        color: blue;
+    }
+    .log:hover{
+        color: tomato;
+    }
+    
+</style>
+
+<body>
+    <div class="total">
+        <div class="container">
+            <h3>Sign up</h3>
+            <div class="linelogin">
+                Have an acount
+                <span class="log" onclick="Log()">Login</span>
+            </div>
+            <div class="email">
+                email
+                <input id="mail" type="text">
+            </div>
+
+
+            <div class="pass">
+                password
+                <input id="password" type="text">
+            </div>
+
+            <div class="XNpass"> repeatpassword
+                <input id="confirm" type="text">
+            </div>
+
+            <div class="signin">
+                <button id="creat" onclick="signIn()">Creat Account</button>
+            </div>
+
+            <div id="error-mail" style="color: red; display: none;" > ERROR EMAIL</div>
+            <div id="error-pass" style="color: red; display: none;"> ERROR PASSWORK</div>
+            
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
