@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .change {
+        color: blue;
+    }
+
+    .change:hover {
+        color: tomato;
+    }
+</style>
+
 <body>
     <h3>Login</h3>
     <div>Email
@@ -13,11 +24,13 @@
     <div class="pass"> Pass work
         <input id="log-pass" type="text">
     </div>
-    <div class="login" >
-        <button onclick="Login()" >LOGIN</button>
+    <div class="login">
+        <button onclick="Login()">LOGIN</button>
+        <span class="change" onclick="ChangePage()"> Change passwork?</span>
     </div>
-    <div style="color: red; display: none;" id="err-log-email" > Email khong ton tai</div>
-    <div style="color: red; display: none;" id="err-log-pass" > Mat khau sai! Hay nhap lai</div>
+    <div style="color: red; display: none;" id="err-log-email"> Email không tồn tại</div>
+    <div style="color: rgb(255, 0, 0); display: none;" id="err-log-pass"> Mật khẩu sai! Hãy nhập lại</div>
     <script src="./main.js"></script>
 </body>
+
 </html>

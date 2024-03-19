@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./main.js">
+</head>
+<body>
+    <div class="total">
+        <div class="container">
+            <h3>Change password</h3>
+            <div class="email">
+                email
+                <input id="change-mail" type="text">
+            </div>
+
+
+            <div >
+                password
+                <input id="old-pass" type="text">
+            </div>
+            <div >
+                New Passwork
+                <input id="new-pass" type="text">
+            </div>
+            <div >
+                Confirm passwork
+                <input id="confirmNP" type="text">
+            </div>
+
+           
+
+            <div >
+                <button id="update" onclick="changesuccess()">Change passwork</button>
+            </div>
+
+            <div id="error-change-mail" style="color: red; display: none;" > ERROR EMAIL</div>
+            <div id="error-change-pass" style="color: red; display: none;"> ERROR PASSWORK</div>
+            <script src="./main.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>
