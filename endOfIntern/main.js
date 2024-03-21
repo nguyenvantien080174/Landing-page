@@ -24,19 +24,20 @@ const checkSyntax = () => {
   if (regexemail.test(email)) {
     mailID.style.display = "none";
   } else {
-    document.getElementById("error-mail").innerHTML = "Loi cu phap email";
+    document.getElementById("error-mail").innerHTML =
+      "Vui lòng nhập đúng định dạng email!";
     mailID.style.display = "block";
   }
   if (regexpass.test(pass)) {
     passwordID.style.display = "none";
   } else {
     document.getElementById("error-pass").innerHTML =
-      "Vui lòng nhập đúng định dạng mật khẩu (8-32 kí tự, có chữ cái viết hoa và thường)";
+      "Vui lòng nhập đúng định dạng mật khẩu (8-32 kí tự, có chữ cái viết hoa và thường)!";
     passwordID.style.display = "block";
   }
 
   if (pass != confirm) {
-    document.getElementById("error-pass").innerHTML = "Mật khẩu xác nhận sai";
+    document.getElementById("error-pass").innerHTML = "Mật khẩu xác nhận sai!";
     passwordID.style.display = "block";
   }
 
@@ -71,7 +72,7 @@ const checkEmailTT = () => {
 
   // Kiểm tra xem email mới đã tồn tại trong danh sách tài khoản hay không
   if (accounts.hasOwnProperty(newEmail)) {
-    document.getElementById("error-mail").innerHTML = "Email da ton tai";
+    document.getElementById("error-mail").innerHTML = "Email đã tồn tại";
     mailID.style.display = "block";
     return 0;
   } else {
@@ -163,12 +164,11 @@ const Change = () => {
     // Kiểm tra xem mật khẩu cũ nhập vào có khớp với mật khẩu của email đó hay không
     if (accounts[inputEmail] === oldPassword) {
       if (oldPassword === newPassword) {
-        passwordID.innerHTML = "Ban da nhap mat khau trung voi mat khau cu!";
+        passwordID.innerHTML = "Mật khẩu bạn nhập đã trùng với mật khẩu cũ!";
         passwordID.style.display = "block";
         mailID.style.display = "none";
         return 0;
       } else if (newPassword === confirmNP) {
-
         const regexpass = /^(?=.*[a-z])(?=.*[A-Z]).{8,32}$/;
 
         if (regexpass.test(newPassword)) {
@@ -195,7 +195,7 @@ const Change = () => {
         // localStorage.setItem("accounts", JSON.stringify(accounts));
         // return 1;
       } else {
-        passwordID.innerHTML = "Mat khau xac nhan sai!";
+        passwordID.innerHTML = "Mật khẩu xác nhận sai!";
         passwordID.style.display = "block";
         mailID.style.display = "none";
         return 0;
@@ -217,10 +217,18 @@ const Change = () => {
 };
 
 const ChangePage = () => {
-  window.location.href = "http://127.0.0.1:5500/endOfIntern/change.html";
+  window.location.href =
+    "https://nguyenvantien080174.github.io/Landing-page/endOfIntern/change.html";
 };
 const changesuccess = () => {
   if (Change() == 1) {
-    window.location.href = "http://127.0.0.1:5500/endOfIntern/changesucess.html";
+    window.location.href =
+      "http://127.0.0.1:5500/endOfIntern/changesucess.html";
   }
+};
+const SignUp = () => {
+  window.location.href ="https://nguyenvantien080174.github.io/Landing-page/endOfIntern/";
+};
+const Forgot = () => {
+  window.location.href ="https://nguyenvantien080174.github.io/Landing-page/endOfIntern/aaa.html";
 };
