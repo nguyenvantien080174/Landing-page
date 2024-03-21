@@ -5,31 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 <style>
     .change {
-        color: blue;
+        color: rgb(39, 39, 255);
     }
 
     .change:hover {
         color: tomato;
     }
+
+    #myCheckbox {
+        height: 15px;
+        width: fit-content;
+    }
 </style>
 
 <body>
-    <h3>Login</h3>
-    <div>Email
-        <input id="log-email" type="text">
+    <div class="total">
+        <div class="container">
+            <h1>Login</h1>
+            <div style=" margin-bottom: 25px;"> New to Vuestic? <span style="color: #271cff;"
+                    onclick="SignUp()">SignUp</span></div>
+            <div style="color: rgb(89, 89, 229);font-weight:600 ;">Email
+                <input id="log-email" type="text">
+            </div>
+            <div class="pass" style="color: rgb(89, 89, 229);font-weight:600 ;"> Pass work
+                <input id="log-pass" type="text">
+            </div>
+            <div> <input style="width: 20px; margin-bottom: 20px;" type="checkbox" id="myCheckbox" name="myCheckbox">
+                Keep me signed in on
+                this device <span style=" font-weight: 600; color: #271cff; padding-left: 70px;">Forgot password?</span>
+            </div>
+            <div class="login">
+                <button onclick="Login()">LOGIN</button>
+                <span class="change" onclick="ChangePage()"> Change passwork?</span>
+            </div>
+            <div style="color: red; display: none;" id="err-log-email"> Email không tồn tại</div>
+            <div style="color: rgb(255, 0, 0); display: none;" id="err-log-pass"> Mật khẩu sai! Hãy nhập lại</div>
+        </div>
     </div>
-    <div class="pass"> Pass work
-        <input id="log-pass" type="text">
-    </div>
-    <div class="login">
-        <button onclick="Login()">LOGIN</button>
-        <span class="change" onclick="ChangePage()"> Change passwork?</span>
-    </div>
-    <div style="color: red; display: none;" id="err-log-email"> Email không tồn tại</div>
-    <div style="color: rgb(255, 0, 0); display: none;" id="err-log-pass"> Mật khẩu sai! Hãy nhập lại</div>
     <script src="./main.js"></script>
 </body>
 
