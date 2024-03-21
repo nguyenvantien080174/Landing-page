@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    .total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container {
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+
+    }
+
+    .but {
+        min-width: 500px;
+    }
+
+    button {
+        width: 500px;
+        height: 30px;
+        margin: 10px;
+        color: #ffffff;
+        background-color: #3f59ff;
+        border-color: #3f59ff;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #1e3cff;
+        color: #c6c5c5;
+    }
+
+    input {
+        width: 500px;
+        height: 30px;
+        margin: 10px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="total">
+        <div class="container">
+            <div class="menu">
+                <h1 style="text-align: center;">MENU</h1>
+            </div>
+            <div class="but">
+                <button onclick="getAllUsers()">GetAllUser</button>
+                <button onclick="getIDuser()">GetUserByID</button>
+                <button onclick="DeleteUserByID()">DeleteUserByID</button>
+                <button onclick="UpdateUserByID()">UpdateUserByID</button>
+                <button onclick="createUserByID()">createUserByID</button>
+            </div>
+            <div class="put">
+                <input id="Email" type="text" placeholder="Email">
+                <input id="ID" type="text" placeholder="ID">
+                <input id="Password" type="text" placeholder="Password">
+            </div>
+            <div id="error" style="display: none; color: red; font-size: 15px;"> </div>
+        </div>
+    </div>
+
+
+    <script src="./abc.js"></script>
+</body>
+
+</html>
