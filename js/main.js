@@ -1,4 +1,14 @@
-// alert("Hello world!");
+const Scroll1a = () => {
+  const navbar = document.querySelector(".c2");
+  const scrollPosition = window.pageYOffset;
+  if (scrollPosition > 700 && scrollPosition < 2800) {
+    navbar.classList.add("c2" + "-active");
+  } else {
+    navbar.classList.remove("c2" + "-active");
+  }
+};
+
+window.addEventListener("scroll", () => Scroll1a());
 function submitTwo() {
   const sub3 = document.getElementById("contact-form");
   const sub4 = document.getElementById("submit2");
@@ -164,20 +174,9 @@ function handleClickHeadingThree() {
   }
 }
 // home scroll
-const Scroll1 = () => {
-  const navbar = document.querySelector(".c2");
-  const scrollPosition = window.pageYOffset;
-  if (scrollPosition > 700 && scrollPosition < 2800) {
-    navbar.classList.add("c2" + "-active");
-  } else {
-    navbar.classList.remove("c2" + "-active");
-  }
-};
-
-window.addEventListener("scroll", () => Scroll1());
 
 
-const Scroll2 = () => {
+const Scroll2a = () => {
   const navbar = document.querySelector(".c3");
   const scrollPosition = window.pageYOffset;
   if (scrollPosition > 2800 && scrollPosition < 3600) {
@@ -187,10 +186,10 @@ const Scroll2 = () => {
   }
 };
 
-window.addEventListener("scroll", () => Scroll2());
+window.addEventListener("scroll", () => Scroll2a());
 
 
-const Scroll3 = () => {
+const Scroll3a = () => {
   const navbar = document.querySelector(".c4");
   const scrollPosition = window.pageYOffset;
   if (scrollPosition > 3600 && scrollPosition < 4600) {
@@ -200,11 +199,11 @@ const Scroll3 = () => {
   }
 };
 
-window.addEventListener("scroll", () => Scroll3());
+window.addEventListener("scroll", () => Scroll3a());
 
 
 
-const Scroll4 = () => {
+const Scroll4a = () => {
   const navbar = document.querySelector(".c5");
   const scrollPosition = window.pageYOffset;
   if (scrollPosition > 4600 && scrollPosition < 5700) {
@@ -214,10 +213,10 @@ const Scroll4 = () => {
   }
 };
 
-window.addEventListener("scroll", () => Scroll4());
+window.addEventListener("scroll", () => Scroll4a());
 
 
-const Scroll5 = () => {
+const Scroll5a = () => {
   const navbar = document.querySelector(".c6");
   const scrollPosition = window.pageYOffset;
   if (scrollPosition > 5700 && scrollPosition < 7300) {
@@ -227,10 +226,10 @@ const Scroll5 = () => {
   }
 };
 
-window.addEventListener("scroll", () => Scroll5());
+window.addEventListener("scroll", () => Scroll5a());
 
 
-const Scroll6 = () => {
+const Scroll6a = () => {
   const navbar = document.querySelector(".c7");
   const scrollPosition = window.pageYOffset;
   if (scrollPosition > 7300 && scrollPosition < 8300) {
@@ -240,7 +239,7 @@ const Scroll6 = () => {
   }
 };
 
-window.addEventListener("scroll", () => Scroll6());
+window.addEventListener("scroll", () => Scroll6a());
 
 
 // HANDLESCROLL FOR NAVBAR//`
@@ -314,12 +313,11 @@ const Scroll1 = () => {
 window.addEventListener("scroll", () => Scroll1());
 // //HANDLESCROLL FOR FORM
 // BUG neu ko scroll thi ko chay
-console.log();
+
 
 const auto = () => {
   const form = document.querySelector(".wow");
   const scrollPosition = window.pageYOffset;
-  console.log("check", scrollPosition);
   if (scrollPosition == 0) {
     form.classList.add("form" + "-active");
   }

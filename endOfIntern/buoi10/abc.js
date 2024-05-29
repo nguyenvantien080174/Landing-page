@@ -4,7 +4,9 @@ const getAllUsers = async () => {
       "https://65f001c5ead08fa78a516efe.mockapi.io/api/v1/users",
       { method: "GET" }
     );
-    console.log(await res.json());
+    const list = res.json;
+    console.log(list);
+    render(list);
   } catch (err) {
     console.error(err);
   }
@@ -17,7 +19,8 @@ const getIDuser = async () => {
       "https://65f001c5ead08fa78a516efe.mockapi.io/api/v1/users/" + id,
       { method: "GET" }
     );
-    console.log(await res.json());
+    const list = res.json;
+    render(list);
   } catch (err) {
     console.error(err);
   }
@@ -31,6 +34,8 @@ const DeleteUserByID = async () => {
       { method: "DELETE" }
     );
     console.log("User with ID " + id + " has been deleted!");
+    const list = res.json;
+    render(list);
   } catch (error) {
     console.error(error);
   }
@@ -56,6 +61,8 @@ const UpdateUserByID = async () => {
         body: JSON.stringify(updatedData),
       }
     );
+    const list = res.json;
+    render(list);
   } catch (error) {
     console.error(error);
   }
@@ -81,6 +88,8 @@ const createUserByID = async () => {
         body: JSON.stringify(createData),
       }
     );
+    const list = res.json;
+    render(list);
   } catch (error) {
     console.error(error);
   }
@@ -138,3 +147,16 @@ try {
     document.getElementById("error").style.display= "block";
   }
  }
+
+ const render = (list) =>{
+    var listBTN = document.querySelector('#list');
+    var htmls = list.map(function(list){
+      return `
+      <li>
+      <h4>${list.email}</h4>
+      <p>${list.password}</p>
+      </li>
+      `
+    })
+    listBTN.innerHTML = htmls.join('');
+ };
